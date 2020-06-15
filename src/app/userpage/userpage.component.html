@@ -1,0 +1,37 @@
+<div class="user">
+<h1>My Cart</h1>
+<div class="price">
+        
+          <span class="total">Sub total:</span><span class="total">{{totalPrice$}}Rs</span>
+        
+      </div>
+    </div>
+<div>
+  <h3>Items-Added</h3>
+<ul class="food-detail" >
+<ng-container *ngFor="let item of added " >
+  <li *ngIf="item.quantity!=0" >
+    <div class="image">
+    <img class="image-responsive" src="assets/images/{{item.id}}.png">
+      </div>
+      <div class="detail">
+  	  <div >
+  	  	{{ item.name }}
+  	  </div>
+  	  <div>
+  	  	{{item.brand}}
+  	  </div>
+  	  <div>
+  	  	Price:{{item.price}}Rs
+  	  </div>
+      <div>
+        Quantity:{{item.quantity}}
+      </div>
+    </div>
+
+  	  
+   
+  </li>
+</ng-container>
+</ul>
+</div>

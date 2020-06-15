@@ -1,0 +1,33 @@
+.image{
+	height: 100px;
+	width: 100px;
+}
+ul {
+  text-align:center;
+}
+li {
+  
+  text-align:center;
+}
+li button:active {
+  background-color: #7300ff;
+}
+
+li button {
+  display: block;
+  color:black;
+  text-align: left;
+  padding: 15px 17px;
+  text-decoration: none;
+}
+.scroll a {
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #f36b1b;
+    border-radius: 4px;
+    width: 6em;
+    color: white;
+}

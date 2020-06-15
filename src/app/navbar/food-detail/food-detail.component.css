@@ -1,0 +1,47 @@
+.image{
+display:inline-block;
+margin-left:0px;
+}
+.detail {
+display:inline-block;
+padding-left:50px;
+padding-top: 40px;
+}
+.add{
+	border:solid 1px black;
+	padding:5px;
+	font-size: 20px;
+
+}
+.add button{
+   color:white;
+   background-color: black;
+	
+	font-size: 20px;
+}
+.add span{
+	padding:10px;
+}
+
+li {
+ 
+  
+ 
+  width: auto;
+  border-radius: 20px;
+  background: linear-gradient(to right bottom, white, #F5F5F5);
+  
+  padding: 30px;
+  cursor: pointer;
+
+}
+  .card-name {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.473);
+  }
+  .btn{
+  	padding: 10px;
+  	width: -webkit-fill-available;
+  	background-color:black;
+  	color:white;
+  }

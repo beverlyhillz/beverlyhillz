@@ -1,0 +1,36 @@
+ul {
+  list-style-type: none;
+  margin-top: 100px;
+  padding: 0;
+  overflow: hidden;
+  display:grid;
+  grid-gap: 0.2vh;
+  grid-auto-rows: 9.52vh;
+  grid-template-columns: repeat(5, 17.6vh);
+  grid-auto-flow: row;
+  text-align: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+li {
+  grid-row-end: span 1;
+  text-align:center;
+}
+li button:active {
+  background-color: #7300ff;
+}
+
+li button {
+  display: block;
+  color:black;
+  text-align: left;
+  padding: 15px 17px;
+  text-decoration: none;
+}
+ul {
+  text-align:center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

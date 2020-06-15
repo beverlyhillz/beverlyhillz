@@ -1,0 +1,120 @@
+/* Global Styles */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+ h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+  background-color:white;
+}
+body, input[text], button {
+  color: #333;
+  font-family: Cambria, Georgia;
+}
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+/* Navigation link styles */
+.scroll a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hide;
+    list-style-type: none;
+flex-wrap: nowrap;
+scrollbar-width:none;
+scroll-behavior: smooth;
+width:100%;
+align-items: center;
+}
+
+ul.scroll  li {
+  list-style-type: none;
+    flex-wrap: nowrap;
+    display: inline-block;
+    float: none;
+}
+
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* You can add global styles to this file, and also import other style files */
+
+ul.food-detail li{
+	padding:9px;
+	padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+.navbar{
+
+	background-color: black;
+	margin-right:0px;
+	align-items: center;
+	font:white;
+}
+.navbar h2{
+	color:white;
+	text-align: center;
+}
+.image-responsive{
+	width:200px;
+	height: 200px;
+}
+.checkout{
+
+}
+.cartimage{
+	width:40px;
+	height: 40px;
+
+}

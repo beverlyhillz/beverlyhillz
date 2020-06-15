@@ -1,0 +1,22 @@
+
+<div class="navbar">
+	<span><a  routerLink="/food"routerLinkActive="active" 
+   ><img class="image"src="/assets/images/logo.png"></a></span>
+<h2>BuyFood</h2>
+<span class="checkout">
+  	  	<a routerLink="/user" routerLinkActive="active" ><img class="cartimage" src="assets/images/cart.png">
+    </a>
+  	  </span>
+</div>
+<div *ngIf="router.url!='/user'">
+<ul class="scroll">
+  <li *ngFor="let  food of foods$ | async"
+  >
+    <a [routerLink]="['food',food.id]" routerLinkActive="active" 
+    (click)='toggleModal(food.id)'>
+    	{{ food.name }}  
+    </a> 
+  </li>
+</ul>
+<div>
+
