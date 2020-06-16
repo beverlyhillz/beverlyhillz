@@ -31,7 +31,9 @@ jobs:
     - name: install dependency
       run: npm ci
     - name: build
-      run: npm run build:ci
+      run: |
+           npm install
+           npm run build:ci
     - name: Archive build
       if: success()
       uses: actions/upload-artifact@v1
@@ -66,4 +68,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           BRANCH: gh-pages
-          FOLDER: deploy_dist/grofgroc 
+          FOLDER: docs/
