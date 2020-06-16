@@ -15,12 +15,14 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
+    name: Build
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v1
       
       
       
@@ -60,7 +62,7 @@ jobs:
         with:
           name: deploy_dist    
       - name: deploy on ghpages
-        uses: beverlyhillz/github-pages-deploy-action@releases/v3
+        uses: beverlyhillz/ghaction-github-pages@v2.0.1
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           BRANCH: gh-pages
