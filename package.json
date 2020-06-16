@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "build:ci:"ng build --prod --sourceMap=false --base-href /grofgroc/",
+    "test:ci":"ng test --watch=false --code-coverage --source-map true",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
