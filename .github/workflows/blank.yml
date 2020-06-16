@@ -60,7 +60,7 @@ jobs:
         with:
           name: deploy_dist    
       - name: deploy on ghpages
-        uses: beverlyhillz/github-pages-deploy-action@releases/v3
+        uses: beverlyhillz/angular-deploy-gh-pages-actions
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           BRANCH: gh-pages
