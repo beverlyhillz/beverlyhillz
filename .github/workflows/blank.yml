@@ -62,7 +62,7 @@ jobs:
         with:
           name: deploy_dist    
       - name: deploy on ghpages
-        uses: beverlyhillz/ghaction-github-pages@v2.0.1
+        uses: beverlyhillz/github-pages-deploy-action@3.5.5
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           BRANCH: gh-pages
