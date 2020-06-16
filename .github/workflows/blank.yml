@@ -38,7 +38,12 @@ jobs:
       with:
         name: deploy_dist
         path: dist
-     
+    - name: Archive code coverage result
+      if: successs()
+      uses: actions/upload-artifact@v1
+      with:
+        name: deploy_coverage
+        path: coverage     
       
     - name: Use Node 12.x
       uses: actions/setup-node@v1
