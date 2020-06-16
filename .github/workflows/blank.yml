@@ -27,6 +27,12 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: ng serve
+    - name: install dependency
+      run: npm ci
+    - name: build
+      run: npm run build:ci
+    - name: test
+      run: npm run test:ci
       
     - name: Use Node 12.x
       uses: actions/setup-node@v1
